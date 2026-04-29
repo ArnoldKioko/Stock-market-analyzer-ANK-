@@ -2,8 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+print(os.getcwd())
 
-os.makedirs('../visuals', exist_ok=True)
+
 df = pd.read_csv('data/cleaned/stocks_clean.csv')
 df['Date'] = pd.to_datetime(df['Date'])
 
